@@ -6,7 +6,9 @@ public class Snack5 {
 	public static void main(String[] args) {	
 		try (Scanner in = new Scanner(System.in)) {
 			String word = "";
-			do {
+			
+			while (!word.equals("0")) {
+				
 				int letterSum = 0;
 				int digitSum = 0;
 				int specialSum = 0;
@@ -27,9 +29,8 @@ public class Snack5 {
 				System.out.println("In the word '" + word + "' there are:");
 				System.out.println(letterSum + " letters");
 				System.out.println(digitSum + " digits");
-				System.out.println(specialSum + " special characters");
-				
-			} while (!word.equals("0"));
+				System.out.println(specialSum + " special characters\n");
+			}
 			
 			in.close();
 		}
